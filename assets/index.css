@@ -1,0 +1,122 @@
+@font-face {
+    font-family: SourceSans3;
+    src: url(./Source_Sans_3/SourceSans3-VariableFont_wght.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    color: white;
+    font-family: SourceSans3, sans-serif;
+    white-space: nowrap;
+}
+.noselect, .noselect * {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.container{
+    background-color: #1a1a1a;
+    background-image: url(./background_pattern.jpg);
+    background-repeat: repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardWrapper{
+    box-shadow: 0 0 15px black;
+    background-image: url(./noise_2a2a2a.jpg);
+    border: 2px solid #4a4a4a;
+}
+.windowHeader{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    cursor: default;
+    touch-action: none;
+    user-select: none;
+}
+.windowHeader .icon{
+    margin: 0 4px;
+}
+.windowHeaderIcons{
+    margin-left: auto;
+    display: flex;
+}
+.windowHeaderIcons > div{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 32px;
+}
+.profilePicture{
+    background-image: url(./marcin-chudzinski.jpg);
+    background-size: cover;
+    height: 192px;
+    width: 192px;
+    border-radius: 50%;
+}
+.header{
+    border-bottom: 1px solid #4a4a4a;
+    margin-bottom: 4px;
+}
+.title{
+    font-family: monospace;
+    color: #afafaf;
+    margin-bottom: 16px;
+}
+.nav a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+}
+.nav a:not(:last-child){
+    margin-bottom: 8px;
+}
+.icon{
+    height: 22px;
+    width: 22px;
+    background-size: contain;
+    image-rendering: pixelated;
+}
+.folderIcon{
+    background-image: url(./dir.png);
+}
+.inIcon{
+    background-image: url(./in.png);
+}
+.mailIcon{
+    background-image: url(./mail.png);
+}
+.termIcon{
+    background-image: url(./term.png);
+}
+.copyIcon{
+    background-image: url(./copy.png);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.message{
+    position: fixed;
+    bottom: -38px;
+    transition: all 0.2s;
+    background-color: #4a4a4a;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
